@@ -1,0 +1,14 @@
+{
+  "name": "autotest-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "recharts": "^2.6.0",
+    "axios": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  }
+}
