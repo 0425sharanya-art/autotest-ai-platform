@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - test-runner
+
+  test-runner:
+    build: ./test-runner
+    ports:
+      - "8001:8001"
+
+  ai-test-generator:
+    build: ./ai-test-generator
+    ports:
+      - "8002:8002"
+
+  defect-analyzer:
+    build: ./defect-analyzer
+    ports:
+      - "8003:8003"
