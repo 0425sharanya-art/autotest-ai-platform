@@ -1,5 +1,3 @@
-# autotest-ai-platform
-AutoTestAI – AI-Powered Microservices Testing Platform
 # AutoTest AI Platform
 
 AI-powered microservices-based test automation platform.
