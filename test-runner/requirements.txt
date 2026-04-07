@@ -2,4 +2,3 @@ fastapi
 uvicorn
 pytest
 requests
-selenium
