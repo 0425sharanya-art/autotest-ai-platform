@@ -3,16 +3,21 @@ import subprocess
 
 app = FastAPI()
 
+@app.get("/")
+def health():
+    return {"status": "Test Runner Service Running"}
+
 @app.post("/run")
 def run_tests():
 
     result = subprocess.run(
-        ["pytest", "../api-tests"],
+        ["pytest"],
         capture_output=True,
         text=True
     )
 
     return {
-        "output": result.stdout,
-        "errors": result.stderr
+        "stdout": result.stdout,
+        "stderr": result.stderr,
+        "return_code": result.returncode
     }
